@@ -1,0 +1,84 @@
+
+Répartition des rôles dans l’équipe :
+
+	1.	Oleg (Architecte) :
+	•	Conception de l’architecture globale (frontend-backend, bases de données, API).
+	•	Encadrement technique : prise de décisions sur les technologies utilisées.
+	•	Résolution des problèmes techniques bloquants.
+	•	Coordination avec les autres membres.
+	2.	Nelly (Développeuse junior) :
+	•	Implémentation des fonctionnalités frontend ou backend, en fonction de ses forces.
+	•	Suivi des tâches techniques définies par toi ou par José.
+	•	Tests unitaires simples et feedbacks pendant le développement.
+	3.	José (Designer et Project Manager) :
+	•	Création du design UI/UX (maquettes, wireframes).
+	•	Suivi du planning et des priorités.
+	•	Préparation des supports pour la présentation finale (slides, démos visuelles).
+	4.	Joll (Testeur QA) :
+	•	Rédaction des scénarios de tests dès que les premières fonctionnalités sont prêtes.
+	•	Tests manuels des fonctionnalités pour identifier les bugs.
+	•	Validation de la stabilité avant le sprint final.
+
+Sprint 1 : Préparation et mise en route (9 h 00 - 10 h 30)
+
+	1.	Oleg (Architecte) :
+	•	Concevoir l’architecture globale.
+	•	Configurer le projet (structure de fichiers, setup initial GitHub, outils).
+	•	Définir les tâches techniques clés pour le MVP.
+	2.	Nelly (Dév junior) :
+	•	Configurer son environnement de développement.
+	•	Aider à poser les bases du projet (frontend ou backend).
+	3.	José (Designer) :
+	•	Créer une maquette rapide ou wireframe du projet.
+	•	Définir les couleurs, typographies et éléments visuels principaux.
+	4.	Joll (QA) :
+	•	Assister à la planification pour comprendre le projet.
+	•	Préparer une liste de scénarios de tests simples (login, navigation, etc.).
+
+Sprint 2 : Développement des fonctionnalités principales (10 h 30 - 12 h 30)
+
+	1.	Oleg (Architecte) :
+	•	Encadrer Nelly dans l’implémentation des fonctionnalités critiques.
+	•	Intégrer le backend et les bases de données, si nécessaire.
+	•	Mettre en place l’API et assurer sa communication avec le frontend.
+	2.	Nelly (Dév junior) :
+	•	Implémenter des composants frontend simples (formulaires, navigation).
+	•	Collaborer pour tester les premiers appels API ou fonctionnalités backend.
+	3.	José (Designer) :
+	•	Fournir les éléments graphiques nécessaires à Nelly.
+	•	Réviser et affiner le design visuel pendant l’implémentation.
+	4.	Joll (QA) :
+	•	Tester les fonctionnalités dès qu’elles sont prêtes (exploratoire).
+	•	Noter les bugs dans un document partagé ou une Issue GitHub.
+
+Sprint 3 : Finalisation et préparation des présentations (12 h 30 - 15 h 00)
+
+	1.	Oleg (Architecte) :
+	•	Finaliser les fonctionnalités critiques avec Nelly.
+	•	S’assurer que le projet est stable et prêt pour la démo.
+	2.	Nelly (Dév junior) :
+	•	Ajouter des fonctionnalités secondaires ou bonus (si le temps le permet).
+	•	Déboguer les fonctionnalités principales avec Joll.
+	3.	José (Designer) :
+	•	Préparer les supports visuels pour la présentation finale (slides, maquettes finales).
+	•	Assister Joll dans la validation visuelle des éléments implémentés.
+	4.	Joll (QA) :
+	•	Effectuer des tests finaux et signaler les bugs restants.
+	•	Valider la fluidité de la démo pour la présentation.
+
+Conseils pour l’équipe :
+
+	1.	Communication fluide :
+	•	Utilisez un canal dédié (Slack, Discord, ou autre) pour partager les updates.
+	•	Planifiez des points rapides de synchronisation toutes les heures.
+	2.	Gestion des tâches :
+	•	Utilisez le projet GitHub pour suivre les tâches (To Do, In Progress, Done).
+	•	Priorisez les fonctionnalités essentielles et évitez de s’éparpiller.
+	3.	Optimisation du temps :
+	•	Limitez les pauses à des moments clés (après chaque sprint).
+	•	Préparez la présentation avant 14 h pour éviter le stress.
+	4.	Présentation finale :
+	•	José peut présenter la partie visuelle et UX.
+	•	Oleg, tu expliques l’architecture et les points techniques majeurs.
+	•	Toute l’équipe doit être prête à répondre aux questions du jury.
+
