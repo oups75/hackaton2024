@@ -168,7 +168,8 @@ nav ul {
     width: 320px;
 }
 
-nav li a {
+nav li a,
+a {
     margin: 0 10px;
     font-size: 1.2em;
     text-decoration: none;
@@ -193,6 +194,13 @@ h1 {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 36px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    margin-top: 20px;
 }
 
 /** Forms **/
@@ -224,6 +232,7 @@ label {
 }
 
 /*******************  buttons  *******************/
+button,
 input[type="submit"],
 #inscription,
 .choice button,
