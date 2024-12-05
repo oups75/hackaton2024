@@ -171,3 +171,8 @@ select {
 label {
     margin-bottom: 8px;
 }
+
+#map {
+    height: 400px;
+    margin-top: 20px;
+}
