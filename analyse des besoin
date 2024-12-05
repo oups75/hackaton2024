@@ -1,0 +1,94 @@
+Document d’analyse des besoins
+1. Introduction
+Objectif : Développer une plateforme web pour améliorer la réponse aux situations d’urgence et renforcer la sécurité des quartiers en facilitant la communication entre citoyens et autorités.
+
+Portée : La plateforme permettra aux citoyens de signaler des incidents, aux autorités de réagir efficacement, et à tous les utilisateurs de recevoir des informations en temps réel.
+
+2. Acteurs
+Voici les acteurs identifiés pour le système, avec leurs rôles respectifs :
+
+Citoyen :
+
+Un utilisateur standard de la plateforme, non authentifié ou authentifié, qui peut signaler des incidents, consulter les alertes et accéder aux ressources d’urgence.
+Autorité locale :
+
+Administrateurs ou responsables de sécurité pouvant gérer les incidents, envoyer des notifications et consulter des statistiques.
+Administrateur système :
+
+Responsable de la gestion technique de la plateforme (droits utilisateurs, maintenance).
+Testeur QA (facultatif dans le document officiel) :
+
+Acteur interne, utilisé pour s’assurer que les fonctionnalités répondent aux attentes.
+3. Analyse des besoins fonctionnels
+Pour le Citoyen
+<Citoyen> doit pouvoir signaler un incident :
+
+Via un formulaire accessible en ligne, incluant :
+Type d’incident (accident, feu, comportement suspect, etc.).
+Localisation (coordonnées GPS ou adresse).
+Description et photos optionnelles.
+<Citoyen> doit pouvoir consulter les incidents signalés dans sa zone :
+
+Affichage sur une carte interactive avec :
+Type d’incident.
+Heure et date du signalement.
+<Citoyen> doit pouvoir recevoir des notifications d’urgence :
+
+En fonction de sa localisation :
+Alertes sur incidents critiques (évacuation, routes bloquées, etc.).
+Instructions spécifiques en cas d’urgence.
+<Citoyen> doit pouvoir accéder à des ressources d’urgence :
+
+Numéros utiles (pompiers, police, médecins).
+Tutoriels de premiers secours ou guides pratiques.
+Pour l’Autorité locale
+<Autorité locale> doit pouvoir consulter tous les incidents signalés :
+
+Via un tableau de bord centralisé :
+Liste des incidents par type, gravité et localisation.
+Filtrage par date, zone ou catégorie.
+<Autorité locale> doit pouvoir gérer les incidents signalés :
+
+Modifier le statut d’un incident (en cours, résolu, annulé).
+Ajouter des commentaires ou mises à jour visibles pour les citoyens.
+<Autorité locale> doit pouvoir envoyer des notifications d’urgence :
+
+Notification ciblée basée sur la localisation des citoyens.
+Messages prédéfinis ou personnalisés.
+<Autorité locale> doit pouvoir accéder à des statistiques :
+
+Données analytiques sur les incidents :
+Nombre d’incidents signalés par type.
+Zones les plus concernées.
+Pour l’Administrateur système
+<Administrateur système> doit pouvoir gérer les utilisateurs :
+
+Ajouter, modifier ou supprimer des comptes.
+Définir les rôles (citoyen, autorité locale, etc.).
+<Administrateur système> doit pouvoir surveiller l’activité de la plateforme :
+
+Suivi des erreurs ou incidents techniques.
+Gestion des logs et maintenance.
+4. Analyse des besoins non fonctionnels
+Performance :
+
+La plateforme doit pouvoir traiter jusqu’à 5000 signalements simultanés.
+Accessibilité :
+
+Interface responsive, adaptée aux mobiles et tablettes.
+Sécurité :
+
+Protection des données des utilisateurs (cryptage, RGPD).
+Système d’authentification sécurisé.
+Disponibilité :
+
+Uptime minimal de 99,9 % pour garantir la fiabilité.
+5. Priorités (MVP)
+Pour une première version fonctionnelle (Minimum Viable Product), les priorités sont :
+
+Signalement d’incidents par les citoyens.
+Carte interactive pour consulter les incidents.
+Notifications d’urgence.
+Dashboard simplifié pour les autorités locales.
+6. Conclusion
+Ce document d’analyse des besoins détaille les fonctionnalités nécessaires à la plateforme de sécurité et d’urgence, en définissant clairement les actions possibles pour chaque acteur. Ces besoins guideront les phases de conception, de développement et de test du projet.
