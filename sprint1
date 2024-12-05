@@ -88,3 +88,135 @@ Conseils pour l'équipe :
 Coordination : Assure-toi que chaque membre de l'équipe sait quelles tâches lui sont assignées et comprend les dépendances entre les tickets.
 Priorisation : Concentre-toi sur les fonctionnalités essentielles pour le Sprint 1. Les améliorations esthétiques peuvent être finalisées si le temps le permet.
 Communication : Maintiens une communication régulière pour résoudre rapidement les obstacles et partager les avancées.
+Backlog du Backend
+Objectif principal :
+Créer un serveur REST fonctionnel avec des endpoints pour gérer les utilisateurs, les incidents, et leur stockage dans une base de données SQLite.
+
+Éléments du backlog :
+1. Configuration initiale du projet
+Ticket 1 : Initialiser le projet Node.js
+
+Description : Créer le projet avec npm init et installer les dépendances nécessaires.
+Tâches :
+Initialiser le projet avec npm init -y.
+Installer Express, SQLite3, et Body-Parser.
+Configurer le fichier package.json.
+Priorité : Haute.
+Estimation : 30 minutes.
+2. Configuration de la base de données
+Ticket 2 : Configurer SQLite
+
+Description : Créer et configurer une base de données SQLite pour stocker les utilisateurs et les incidents.
+Tâches :
+Créer un fichier database.js pour gérer la base de données.
+Configurer la connexion à SQLite.
+Ajouter une fonction pour initialiser les tables suivantes :
+Utilisateurs : id, nom, email, role.
+Incidents : id, type, description, localisation, statut.
+Priorité : Haute.
+Estimation : 1 heure.
+3. Développement des routes REST
+Ticket 3 : Implémenter la route GET /
+
+Description : Ajouter une route de base pour vérifier que le serveur est en marche.
+Tâches :
+Ajouter un endpoint GET /.
+Retourner un message simple (Serveur en marche !).
+Priorité : Moyenne.
+Estimation : 15 minutes.
+Ticket 4 : Ajouter la route POST /utilisateurs
+
+Description : Permettre l’ajout de nouveaux utilisateurs dans la base de données.
+Tâches :
+Créer l’endpoint POST /utilisateurs.
+Valider les données reçues (nom, email, rôle).
+Insérer l’utilisateur dans la base de données.
+Retourner un message de succès ou une erreur.
+Priorité : Haute.
+Estimation : 1 heure.
+Ticket 5 : Ajouter la route GET /utilisateurs
+
+Description : Permettre la récupération de tous les utilisateurs.
+Tâches :
+Créer l’endpoint GET /utilisateurs.
+Lire les données dans la base de données.
+Retourner les utilisateurs sous forme de tableau JSON.
+Priorité : Moyenne.
+Estimation : 30 minutes.
+Ticket 6 : Ajouter la route POST /incidents
+
+Description : Permettre l’ajout de nouveaux incidents dans la base de données.
+Tâches :
+Créer l’endpoint POST /incidents.
+Valider les données reçues (type, description, localisation).
+Insérer l’incident dans la base de données.
+Retourner un message de succès ou une erreur.
+Priorité : Haute.
+Estimation : 1 heure.
+Ticket 7 : Ajouter la route GET /incidents
+
+Description : Permettre la récupération de tous les incidents.
+Tâches :
+Créer l’endpoint GET /incidents.
+Lire les données dans la base de données.
+Retourner les incidents sous forme de tableau JSON.
+Priorité : Moyenne.
+Estimation : 30 minutes.
+Ticket 8 : Ajouter la route PUT /incidents/:id
+
+Description : Permettre la mise à jour du statut d’un incident existant.
+Tâches :
+Créer l’endpoint PUT /incidents/:id.
+Valider les données reçues (nouveau statut).
+Mettre à jour l’incident dans la base de données.
+Retourner un message de succès ou une erreur.
+Priorité : Moyenne.
+Estimation : 45 minutes.
+4. Tests unitaires
+Ticket 9 : Ajouter des tests pour la base de données
+
+Description : Tester les fonctionnalités de la base de données SQLite.
+Tâches :
+Tester la création des tables.
+Vérifier que les données sont insérées et récupérées correctement.
+Priorité : Moyenne.
+Estimation : 1 heure.
+Ticket 10 : Ajouter des tests pour les routes REST
+
+Description : Tester les endpoints GET, POST, et PUT avec Jest et Supertest.
+Tâches :
+Écrire des tests unitaires pour chaque endpoint.
+Vérifier les cas de succès et d’erreur.
+Priorité : Moyenne.
+Estimation : 2 heures.
+5. Améliorations et maintenance
+Ticket 11 : Ajouter une gestion globale des erreurs
+
+Description : Gérer les erreurs pour toutes les routes (par exemple, utilisateur ou incident non trouvé).
+Tâches :
+Créer un middleware de gestion des erreurs.
+Retourner des messages d’erreur cohérents pour les utilisateurs.
+Priorité : Moyenne.
+Estimation : 1 heure.
+Ticket 12 : Documenter les endpoints
+
+Description : Ajouter une documentation simple pour les routes REST.
+Tâches :
+Documenter chaque route (méthode, paramètres, exemples).
+Ajouter un fichier README.md au projet.
+Priorité : Basse.
+Estimation : 1 heure.
+Priorisation globale
+Haute priorité :
+Initialisation du projet.
+Configuration de la base de données.
+Routes principales (POST /utilisateurs, POST /incidents).
+Moyenne priorité :
+Tests unitaires.
+Récupération des données (GET /utilisateurs, GET /incidents).
+Gestion des erreurs.
+Basse priorité :
+Documentation.
+Maintenance.
+
+
