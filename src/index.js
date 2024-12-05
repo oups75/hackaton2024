@@ -14,12 +14,13 @@ const PORT = 3000;
 
 // Middleware pour parser les requêtes JSON
 app.use(bodyParser.json());
+app.use(express.static('public')); // Servir des fichiers HTML et JS dans le dossier 'public'
 
 // Initialiser la base de données
 initDB();
 
 // Route : Ajouter un utilisateur
-app.post('/utilisateurs', (req, res) => {
+app.post('/api/utilisateurs', (req, res) => {
     const { telephone, nom, prenom, mot_de_passe, role } = req.body;
 
     if (!telephone || !nom || !prenom || !mot_de_passe || !role) {
@@ -42,7 +43,7 @@ app.post('/utilisateurs', (req, res) => {
 });
 
 // Route : Login utilisateur
-app.post('/utilisateurs/login', (req, res) => {
+app.post('/api/utilisateurs/login', (req, res) => {
     const { telephone, mot_de_passe } = req.body;
 
     if (!telephone || !mot_de_passe) {
@@ -57,7 +58,7 @@ app.post('/utilisateurs/login', (req, res) => {
 });
 
 // Route : Ajouter un incident
-app.post('/incidents', (req, res) => {
+app.post('/api/incidents', (req, res) => {
     const { categorie, coordonnees, description, auteur_id, photo } = req.body;
 
     if (!categorie || !coordonnees || !description || !auteur_id) {
@@ -74,7 +75,7 @@ app.post('/incidents', (req, res) => {
 });
 
 // Route : Récupérer les incidents
-app.get('/incidents', (req, res) => {
+app.get('/api/incidents', (req, res) => {
     const { utilisateur, categorie, date } = req.query;
 
     recupererIncidents({ utilisateur, categorie, date }, (err, incidents) => {
@@ -84,6 +85,11 @@ app.get('/incidents', (req, res) => {
 
         res.status(200).json(incidents);
     });
+});
+
+// Servir l'application HTML
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/public/index.html');
 });
 
 // Lancer le serveur
