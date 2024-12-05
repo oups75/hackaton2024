@@ -12,13 +12,22 @@ login.addEventListener("submit", (event) => {
 async function loginManagement() {
   let tel = document.getElementById("tel").value;
   let password = document.getElementById("password").value;
+  let lastName = document.getElementById("lastName").value;
+  let firstName = document.getElementById("firstName").value;
+  let role = document.getElementById("role").value;
 
   // Sending ids
 try {
-    const reponse = await fetch(`http://localhost:3000/utilisateurs?telephone=tel&mot_de_passe=password`, {
-      method: "get",
+    const reponse = await fetch(`http://localhost:3000/utilisateurs`, {
+      method: "POST",
       headers: { "Content-Type": "application/json" },
-   
+      body: JSON.stringify({
+        telephone: tel,
+        mot_de_passe: password,
+        nom: lastName,
+        prenom:firstName,
+        role: role
+      }),
     });
     // Saving token and home page return or error message
     const dataReponse = await reponse.json();
