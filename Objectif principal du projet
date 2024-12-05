@@ -1,0 +1,86 @@
+1. Objectif principal du projet
+Créer une plateforme web qui améliore la coordination, l'information et la réponse face aux situations d'urgence, tout en renforçant la sécurité dans les quartiers.
+Exemples de fonctionnalités :
+
+Signalement d’incidents en temps réel (feux, accidents, comportements suspects).
+Notifications locales d’urgence.
+Carte interactive pour localiser les incidents.
+Guide de premiers secours ou de gestion de crise.
+Forum collaboratif pour renforcer l'entraide communautaire.
+2. Fonctionnalités principales (MVP)
+Pour les citoyens :
+Signalement d’un incident :
+
+Formulaire simple pour rapporter un incident (type d’incident, localisation, description, photo).
+Envoi automatique d’une alerte aux autorités locales et aux utilisateurs proches.
+Carte interactive :
+
+Affichage des incidents signalés (feux, zones à éviter, etc.).
+Système de filtrage (par type d’incident ou niveau de gravité).
+Notifications d’urgence :
+
+Alertes en temps réel basées sur la localisation des utilisateurs.
+Instructions spécifiques pour réagir à l’urgence.
+Ressources utiles :
+
+Guide rapide pour gérer les urgences (tutoriels de premiers secours, numéros d'urgence).
+Pour les autorités/administrateurs :
+Dashboard de suivi :
+
+Vue consolidée de tous les incidents signalés.
+Statistiques en temps réel (nombre d’incidents par type, zones les plus signalées).
+Outils de communication :
+
+Envoi de messages ou notifications ciblées.
+3. Structure technique
+Frontend :
+Technologie : React, Vue.js ou simplement HTML/CSS/JS si la simplicité est priorisée.
+Bibliothèques complémentaires :
+Mapbox ou Leaflet.js pour la carte interactive.
+Bootstrap ou TailwindCSS pour un design responsive.
+Backend :
+Technologie : Node.js (Express), Python (Flask ou Django) ou PHP (Laravel).
+Fonctionnalités :
+API REST pour gérer les incidents signalés.
+Gestion des utilisateurs (inscription, connexion, droits).
+Base de données :
+Choix : PostgreSQL ou MongoDB.
+Structure suggérée :
+Table 1 : Utilisateurs (ID, nom, email, rôle, localisation).
+Table 2 : Incidents (ID, type, description, localisation, date, statut).
+Table 3 : Notifications (ID, message, utilisateur cible).
+4. Étapes de développement
+Sprint 1 (Préparation et mise en place - 9 h à 10 h 30)
+Mettre en place le dépôt GitHub et la structure initiale (frontend/backend).
+Créer le design de base avec un wireframe rapide.
+Configurer la base de données et les outils essentiels (API, carte interactive).
+Sprint 2 (Développement des fonctionnalités clés - 10 h 30 à 12 h 30)
+Implémenter le signalement d’incidents via un formulaire (frontend et backend).
+Développer la carte interactive avec Mapbox ou Leaflet.
+Créer un système simple de notifications via email (ex. avec Nodemailer).
+Sprint 3 (Finalisation et présentation - 12 h 30 à 15 h)
+Tester les fonctionnalités principales.
+Ajouter des éléments de design pour améliorer l'expérience utilisateur.
+Préparer le pitch et une démo fonctionnelle.
+5. Plan de présentation (10 minutes)
+Introduction (1 min) :
+
+Problème identifié : manque d’informations centralisées en cas d’urgence.
+Solution proposée : une plateforme collaborative pour renforcer la sécurité.
+Démo de l’application (5-6 min) :
+
+Signalement d’un incident.
+Consultation d’une alerte sur la carte interactive.
+Réception d’une notification en temps réel.
+Points forts (1-2 min) :
+
+Simplicité d’utilisation pour les citoyens et les autorités.
+Impact potentiel pour sauver des vies et renforcer la sécurité.
+Conclusion et vision future (1 min) :
+
+Ajout futur de fonctionnalités (ex. chatbot d’urgence, IA pour analyser les incidents).
+Potentiel d’intégration avec des systèmes publics ou des apps mobiles.
+6. Conseils pratiques
+Simplifie au maximum : privilégie un design épuré et des fonctionnalités faciles à comprendre.
+Communication fluide : assure-toi que chaque membre de l’équipe est clair sur ses tâches.
+Focus sur le MVP : ne te disperse pas sur des fonctionnalités secondaires.
