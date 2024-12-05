@@ -27,9 +27,44 @@
         </header>
         <main>
             <section>
-                <h1>Vous avez un incident à signaler ?</h1>
-                <a href="signal.html">Je signale un incident</a>
+                <h1>Bienvenue dans votre espace</h1>
+                <article>
+                    <h2>Liste des signalements :
+                        <div id="map"></div>
+                    </h2>
+                </article>
+                <article>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th scope="col">Date</th>
+                            <th scope="col">Catégorie</th>
+                            <th scope="col">Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">05/12/24</th>
+                            <td>agression</td>
+                            <td>La description</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">05/12/24</th>
+                            <td>Web agression</td>
+                            <td>La description</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">05/12/24</th>
+                            <td>agression</td>
+                            <td>La description</td>
+                          </tr>
+                        </tbody>
+                    </table>
+                    
+                </article>
             </section>
         </main>
+        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+        <script src="./scripts/dashboard.js"></script>
     </body>
 </html>

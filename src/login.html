@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>hackathon</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Work+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css">
+    <Access-Control-Allow-Origin: */>
+  </head>
+  <body>
+    <header>
+        <p id="title">PERPIGNAN SIGNAL</p>
+        <nav>
+            <ul>
+                <li><a href=./signal.html>Signalement</a></li>
+                <li><a href=./login.html>Connexion</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+      <section id="login">
+        <div class="errorMessage" id="loginError"></div>
+        <h1>Je me connecte</h1>
+        <form action="#" method="post" id="loginForm">
+          <label for="email">E-mail</label>
+          <input type="email" name="email" id="email" />
+          <label for="password">Mot de passe</label>
+          <input type="password" name="password" id="password" />
+          <input type="submit" value="Envoyer" />
+        </form>
+        <p class="oubli">Je n'ai pas de compte, je m'inscris :</p>
+        <a href="./inscription.html">Inscription</a>
+      </section>
+    </main>
+    <script id="inscription" src="./scripts/login.js"></script>
+  </body>
+</html>

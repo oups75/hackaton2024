@@ -27,9 +27,30 @@
         </header>
         <main>
             <section>
-                <h1>Vous avez un incident à signaler ?</h1>
-                <a href="signal.html">Je signale un incident</a>
+                <h1>Je signale un incident</h1>
+                <form action="#" method="post" id="signalForm" required>
+                    <label for="category">Type d'incident *</label>
+                    <select name="category" id="category">
+                        <option value="Agression">Agression</option>
+                        <option value="Vol">Vol</option>
+                        <option value="Water">Fuite d'eau</option>
+                    </select>
+                    <label for="description">Description de l'incident</label>
+                    <input type="text" name="description" id="description" />
+                    <label for="photo">Ajouter une photo:</label>
+                    <input type="file" id="photo" name="avatar" accept="image/png, image/jpeg" />
+                    <div class="addPhoto"></div>
+                    <div>Cliquez pour localiser l'événement :</div>
+                    <div id="map"></div>          
+                    <input type="hidden" name="latitude" id="latitude" />
+                    <input type="hidden" name="longitude" id="longitude" />
+                    <input type="submit" value="Envoyer" />
+                </form>
             </section>
         </main>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+        <script src="./scripts/form.js"></script>
     </body>
 </html>
