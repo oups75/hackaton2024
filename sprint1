@@ -1,0 +1,90 @@
+Sprint 1 : Frontend
+Objectif principal :
+Développer l'interface utilisateur de base permettant aux citoyens de signaler des incidents et de visualiser les incidents existants sur une carte interactive, en interagissant directement avec la base de données SQLite à partir du code JavaScript.
+
+Backlog des tâches :
+Ticket 1 : Configurer la structure du projet frontend
+Description : Mettre en place la structure initiale des fichiers et dossiers pour le projet frontend.
+Tâches :
+Créer le dossier frontend pour le code source.
+Créer les fichiers de base : index.html, style.css, app.js.
+Ajouter les références aux bibliothèques externes nécessaires (par exemple, Leaflet.js pour la carte).
+Estimation : 1 heure.
+Ticket 2 : Créer la page de signalement d'incident
+Description : Développer le formulaire permettant aux utilisateurs de signaler un incident.
+Tâches :
+Concevoir le formulaire avec les champs suivants :
+Type d'incident (sélection déroulante).
+Description (zone de texte).
+Localisation (saisie manuelle ou utilisation de la géolocalisation du navigateur).
+Photo (optionnel, si le temps le permet).
+Valider les entrées utilisateur côté client.
+Styliser le formulaire pour une expérience utilisateur agréable.
+Estimation : 2 heures.
+Ticket 3 : Implémenter l'interaction avec la base de données SQLite depuis JavaScript
+Description : Configurer l'accès direct à la base de données SQLite à partir du code JavaScript pour stocker les incidents signalés.
+Tâches :
+Importer une bibliothèque permettant l'utilisation de SQLite en JavaScript (par exemple, sql.js qui compile SQLite en WebAssembly).
+Initialiser la base de données dans le navigateur en chargeant le fichier .db ou en créant une nouvelle instance.
+Écrire les requêtes SQL pour insérer de nouveaux incidents depuis le formulaire.
+Estimation : 3 heures.
+Ticket 4 : Créer la page d'affichage des incidents avec une carte interactive
+Description : Développer une page permettant aux utilisateurs de visualiser les incidents signalés sur une carte interactive.
+Tâches :
+Intégrer une carte interactive avec Leaflet.js ou Mapbox GL JS.
+Récupérer les incidents stockés dans la base de données SQLite.
+Placer des marqueurs sur la carte pour chaque incident.
+Ajouter des pop-ups ou infobulles avec les détails de l'incident.
+Estimation : 3 heures.
+Ticket 5 : Mettre en place la fonctionnalité de mise à jour en temps réel
+Description : Permettre à la carte de se mettre à jour automatiquement lorsque de nouveaux incidents sont ajoutés.
+Tâches :
+Mettre en place un mécanisme de rafraîchissement périodique des données (par exemple, toutes les minutes).
+Optimiser les requêtes pour ne récupérer que les nouveaux incidents.
+Estimation : 1 heure.
+Ticket 6 : Gérer les erreurs et les validations
+Description : Assurer la robustesse de l'application en gérant les erreurs potentielles.
+Tâches :
+Ajouter des messages d'erreur pour les champs obligatoires non remplis.
+Gérer les exceptions lors de l'accès à la base de données.
+Informer l'utilisateur en cas de réussite ou d'échec des opérations.
+Estimation : 1 heure.
+Ticket 7 : Améliorer le design et l'expérience utilisateur
+Description : Affiner le design de l'application pour une meilleure expérience utilisateur.
+Tâches :
+Utiliser un framework CSS comme Bootstrap ou Tailwind CSS.
+Assurer la compatibilité mobile (design responsive).
+Ajouter des animations ou transitions pour améliorer l'interactivité.
+Estimation : 2 heures.
+Ticket 8 : Tester l'application frontend
+Description : Vérifier que toutes les fonctionnalités fonctionnent comme prévu.
+Tâches :
+Tester le processus de signalement d'un incident.
+Vérifier l'affichage correct des incidents sur la carte.
+Tester la mise à jour en temps réel des données.
+Assurer la compatibilité avec les principaux navigateurs.
+Estimation : 2 heures.
+Total estimé pour le Sprint 1 Frontend : 15 heures
+Notes importantes :
+Accès direct à SQLite depuis JavaScript :
+
+Les navigateurs n'autorisent pas l'accès direct aux fichiers système pour des raisons de sécurité. Cependant, tu peux utiliser la bibliothèque sql.js, qui est une version de SQLite compilée en WebAssembly, permettant d'exécuter une base de données SQLite entièrement dans le navigateur.
+sql.js stocke les données en mémoire. Pour persister les données, il faudra exporter la base de données vers le stockage local du navigateur (LocalStorage, IndexedDB) ou permettre à l'utilisateur de télécharger le fichier de base de données (ce qui peut être complexe).
+Limitation : Cette approche est adaptée pour des démonstrations ou prototypes, mais pour une application réelle, il serait préférable d'avoir un backend pour gérer la base de données.
+Sécurité :
+
+Sans backend, toutes les opérations se font côté client, ce qui peut poser des problèmes de sécurité et de fiabilité des données.
+Les données sont stockées localement et ne sont pas partagées entre les utilisateurs, sauf si un mécanisme de synchronisation est mis en place.
+Outils recommandés :
+Bibliothèques JavaScript :
+sql.js : pour utiliser SQLite en JavaScript côté client.
+Leaflet.js : pour la carte interactive.
+jQuery ou Vanilla JS : pour manipuler le DOM (au choix).
+Framework CSS :
+Bootstrap ou Tailwind CSS : pour un design moderne et responsive.
+Gestion des tâches :
+Utiliser un outil comme GitHub Projects, Trello ou Notion pour suivre les tickets du backlog.
+Conseils pour l'équipe :
+Coordination : Assure-toi que chaque membre de l'équipe sait quelles tâches lui sont assignées et comprend les dépendances entre les tickets.
+Priorisation : Concentre-toi sur les fonctionnalités essentielles pour le Sprint 1. Les améliorations esthétiques peuvent être finalisées si le temps le permet.
+Communication : Maintiens une communication régulière pour résoudre rapidement les obstacles et partager les avancées.
